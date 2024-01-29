@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cultigestapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      run: cultigestapp
+  template:
+    metadata:
+      labels:
+        run: cultigestapp
+    spec:
+      containers:
+      - name: cultigestapp
+        image: devopseasy/cultigestapp:1.0.0-update
+        ports:
+          - containerPort: 80
+        imagePullPolicy: IfNotPresent
