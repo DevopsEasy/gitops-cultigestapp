@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: cultigestapp
+  labels:
+    run: cultigestapp
+spec:
+  type: NodePort
+  ports:
+  - port: 8080
+    targetPort: 80
+    protocol: TCP
+    name: http
+  selector:
+    run: cultigestapp
