@@ -6,11 +6,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      run: cultigestapp:1.0.0-9
+      run: cultigestapp
   template:
     metadata:
       labels:
-        run: cultigestapp:1.0.0-9
+        run: cultigestapp
     spec:
       containers:
       - name: cultigestapp:1.0.0-9
