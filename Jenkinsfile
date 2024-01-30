@@ -40,8 +40,8 @@ pipeline{
                  git commit -m "updated manifest"
                  
                  """
-                withCredentials([gitUsernamePassword(credentialsId: 'dockerhub', gitToolName: 'Default')]) {
-                 sh "git push git@github.com:DevopsEasy/gitops-cultigestapp.git main"
+                withCredentials([gitUsernamePassword(credentialsId: 'github', gitToolName: 'Default')]) {
+                 sh "git push https://github.com/DevopsEasy/gitops-cultigestapp main"
                 }
             }
         }
