@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: cultigestapp:1-13
+  name: cultigestapp
 spec:
   replicas: 1
   selector:
     matchLabels:
-      run: cultigestapp:1-13
+      run: cultigestapp
   template:
     metadata:
       labels:
-        run: cultigestapp:1-13
+        run: cultigestapp
     spec:
       containers:
-      - name: cultigestapp:1-13
+      - name: cultigestapp
         image: devopseasy/cultigestapp:1-13
         ports:
           - containerPort: 80
