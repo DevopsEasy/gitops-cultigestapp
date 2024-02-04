@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: cultigestapp
-        image: devopseasy/cultigestapp:1-13
+        image: devopseasy/cultigestapp:1.0.0-5
         ports:
           - containerPort: 80
         imagePullPolicy: IfNotPresent
