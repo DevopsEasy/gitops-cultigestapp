@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: cultigestapp
 spec:
-  replicas: 7
+  replicas: 3
   selector:
     matchLabels:
       run: cultigestapp
