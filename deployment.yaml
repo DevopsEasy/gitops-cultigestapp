@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: cultigestapp:1.0.0:5
+  name: cultigestapp
 spec:
   replicas: 3
   selector:
     matchLabels:
-      run: cultigestapp:1.0.0:5
+      run: cultigestapp
   template:
     metadata:
       labels:
-        run: cultigestapp:1.0.0:5
+        run: cultigestapp
     spec:
       containers:
       - name: cultigestapp:1.0.0:5
