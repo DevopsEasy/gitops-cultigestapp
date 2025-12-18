@@ -13,7 +13,7 @@ spec:
         run: cultigestapp
     spec:
       containers:
-      - name: cultigestapp:1.0.0:5
+      - name: cultigestapp
         image: devopseasy/cultigestapp:1.0.0:5
         ports:
           - containerPort: 8080
